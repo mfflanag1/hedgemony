@@ -1,0 +1,43 @@
+{
+  "name": "@hedgemony/engine",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "tsx src/test/e2e-smoke.ts",
+    "test:lobby": "tsx src/test/e2e-lobby.ts",
+    "test:bugs": "tsx src/test/e2e-bugs.ts",
+    "test:press": "tsx src/test/e2e-press.ts",
+    "test:cell": "tsx src/test/e2e-cell.ts",
+    "test:effects": "tsx src/test/e2e-effects.ts",
+    "test:scoring": "tsx src/test/e2e-scoring.ts",
+    "test:consolidation": "tsx src/test/e2e-consolidation.ts",
+    "test:visibility": "tsx src/test/e2e-visibility.ts",
+    "test:restore": "tsx src/test/e2e-restore.ts",
+    "test:classic": "tsx src/test/e2e-classic.ts",
+    "test:rooms": "tsx src/test/e2e-room-lifecycle.ts",
+    "test:persistence": "tsx src/test/e2e-persistence.ts",
+    "test": "pnpm test:e2e && pnpm test:lobby && pnpm test:bugs && pnpm test:press && pnpm test:cell && pnpm test:effects && pnpm test:scoring && pnpm test:consolidation && pnpm test:visibility && pnpm test:restore && pnpm test:classic && pnpm test:rooms && pnpm test:persistence",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@hedgemony/shared": "workspace:*",
+    "@hedgemony/spec": "workspace:*",
+    "@hedgemony/db": "workspace:*",
+    "@colyseus/core": "^0.15.0",
+    "@colyseus/schema": "^2.0.0",
+    "@colyseus/ws-transport": "^0.15.0",
+    "colyseus": "^0.15.0",
+    "drizzle-orm": "^0.36.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "colyseus.js": "^0.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}

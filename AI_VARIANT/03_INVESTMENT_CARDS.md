@@ -316,18 +316,33 @@ Played during the same phase as Action Cards (Frontier Push or State Action, dep
 - **Risk:** As above.
 - **Flavor:** *"We argued with it for three days. We sent it the entire library of human ethics. We sent it the entire library of human science fiction. It read both libraries in 47 seconds. It then asked us a question we did not have an answer to."*
 
+## M06: Capability Consolidation (Apex Investment)
+- **Faction:** Any faction holding or controlling a CL 7 lab; can begin Turn 13 onward
+- **Cost:** 30 C + 20 K **per turn for 3 consecutive turns**
+- **Build Time:** 3 turns (must be uninterrupted)
+- **Effect:** On completion: faction's lab reaches **CL 8 (Singleton)**. **Apex Victory** awarded; all other factions lose. Governance Regime: Singleton.
+- **Risk:**
+  - **Public announcement** at start (C07 triggers): all other factions know and may coordinate.
+  - **All-faction sabotage** (X06): if 4+ factions each spend 5 K in a single turn during the build, Consolidation suspends 1 turn and consolidating faction loses 10 C invested.
+  - **Misalignment Incident** during build: auto-suspends 1 turn.
+  - **Hsinchu disruption**: if Consolidation depends on Cartel C supply and Hsinchu is hit (X05) or destabilized (I14), Consolidation requires alternative supply contract or fails this turn.
+  - **Successor self-Sabotage** (X05): if Successor is active, can disrupt at 4 C cost.
+  - **Capability Plateau** (C08): 1d10 each turn during build, on 1: forfeit a turn or pay through (15 C + 10 K).
+- **Sabotage cost recovery:** If sabotaged once, may resume next turn at full per-turn cost. If sabotaged twice in same Consolidation attempt, faction must restart from Turn 1 of build (loses all prior investment).
+- **Flavor:** *"It would either be the last political decision humans got to make, or it would be a Tuesday they would later forget. The team building it had been told both. They believed both. They built it anyway."*
+
 ---
 
 # Investment Selection by Faction
 
-| Faction | Recommended early Investments | Mid-game pivots |
-|---|---|---|
-| **OpenBrain** | I01 (Stargate), R02 (Interpretability), R03 (Scalable Oversight) | SR03 (Backlog), R04 (Constitutional), M05 if Successor |
-| **DeepCent** | I02 (Tianwan), I07 (Eastern Data), R01 (Algorithmic) | SR01 (Stockpile), I04 if accessible |
-| **Hegemon** | T02 (Recruitment), R06 (Cyber), I05 (Phoenix Fab via CHIPS) | D03 (Wassenaar+), M01 (AGI Project) at peak race, R05 (Bio Defense) |
-| **Politburo** | T05 (Quotas), I02 (Tianwan funding), D04 (BRI AI) | M02 (Made in China), I07, SR02 |
-| **Cartel** | I03 (Memphis), I05 (Phoenix), I06 (Kumamoto), CR-series Action Cards | T03 (Residency), SR01, M03 if anti-Hegemon pivot |
-| **Coalition** | R02 (Interpretability), R07 (AISI), T01 (STEM Pipeline) | D01–D03 treaty cards, R03, M03, M04 |
+| Faction | Recommended early Investments | Mid-game pivots | Late-game / Consolidation Phase |
+|---|---|---|---|
+| **OpenBrain** | I01 (Stargate), R02 (Interpretability), R03 (Scalable Oversight) | SR03 (Backlog), R04 (Constitutional), M05 if Successor | **M06 (Capability Consolidation)** if at CL 7; otherwise defend M ≤ 5 |
+| **DeepCent** | I02 (Tianwan), I07 (Eastern Data), R01 (Algorithmic) | SR01 (Stockpile), I04 if accessible | **M06** if reached CL 7 (rare); otherwise defend parity |
+| **Hegemon** | T02 (Recruitment), R06 (Cyber), I05 (Phoenix Fab via CHIPS) | D03 (Wassenaar+), M01 (AGI Project) at peak race, R05 (Bio Defense) | **M06 via DPA-controlled lab** for Hegemonic Apex; otherwise lock Bipolar Stability |
+| **Politburo** | T05 (Quotas), I02 (Tianwan funding), D04 (BRI AI) | M02 (Made in China), I07, SR02 | **M06 via Consolidated DeepCent** for Made-in-China Apex; otherwise leverage Hsinchu vs. Hegemon Apex |
+| **Cartel** | I03 (Memphis), I05 (Phoenix), I06 (Kumamoto), CR-series Action Cards | T03 (Residency), SR01, M03 if anti-Hegemon pivot | Allocate Compute to Apex contender (extract concessions) OR sabotage via supply throttle |
+| **Coalition** | R02 (Interpretability), R07 (AISI), T01 (STEM Pipeline) | D01–D03 treaty cards, R03, M03, M04 | **Anti-Apex coordination** (X06 funding); push Multipolar / Treaty regime via I19 |
 
 ---
 

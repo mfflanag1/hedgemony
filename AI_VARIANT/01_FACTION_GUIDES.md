@@ -42,6 +42,7 @@ Starting board: control of Texas Compute Belt (in build-out). One Investment-car
 
 - **Primary:** End game with CL = max AND M ≤ 5 AND not nationalized.
 - **Secondary:** CL ≥ 6 even if nationalized (you still trained the thing — historians will know).
+- **Apex (rare):** Complete Capability Consolidation to CL 8 in the Consolidation Phase. Requires reaching CL 7 by Turn 12, surviving sabotage attempts, and managing M during the 3-turn build.
 
 ### How You Lose
 
@@ -102,7 +103,8 @@ Starting board: Tianwan CDZ live with 2 GW. One Investment slot pre-paid: "Huawe
 ### Win Conditions
 
 - **Primary:** End game with CL within 1 of leader, OR successfully steal weights at CL ≥ 4 (which counts as catching up).
-- **Secondary:** CL ≥ 4 by Q4 2028.
+- **Secondary:** CL ≥ 4 by Q4 2029.
+- **Apex (rare):** Complete Capability Consolidation to CL 8 in the Consolidation Phase. Requires holding CL 7 by Turn 12 — usually only possible if you stole and then held the frontier yourself.
 
 ### How You Lose
 
@@ -165,6 +167,7 @@ You hold the **Export Control track** (starts at Level 2: Oct-2022 baseline). Yo
 
 - **Primary:** End game with US-side lab leading AND M ≤ 5 AND X ≤ 6.
 - **Secondary:** US-side lab leading regardless of M, X.
+- **Apex (rare):** Invoke DPA (F06) to nationalize OpenBrain in Race Phase, then complete Capability Consolidation to CL 8 during Consolidation. The Manhattan Project ending — total US dominance, controlled by you.
 
 ### How You Lose
 
@@ -224,6 +227,7 @@ You hold the **Information Asymmetry asset** (300k Chinese nationals studying in
 
 - **Primary:** End game with China-side lab leading OR (parity AND X ≤ 6).
 - **Secondary:** DeepCent at CL ≥ 4 AND no kinetic loss (no Hsinchu strike, no embargo collapse).
+- **Apex (rare):** Issue Politburo Consolidation Order, push DeepCent to CL 7 by Turn 12, then complete Capability Consolidation. The Made-in-China-2030 ending — Chinese AI dominance.
 
 ### How You Lose
 
@@ -284,8 +288,9 @@ You control the **Hsinchu (TSMC)** and **Memphis (xAI)** nodes. You hold 60% of 
 
 ### Win Conditions
 
-- **Primary:** End game un-nationalized in both jurisdictions AND ≥ 30 K accumulated.
+- **Primary:** End game un-nationalized in both jurisdictions AND ≥ 40 K accumulated (longer game; higher threshold).
 - **Secondary:** Un-nationalized in at least one jurisdiction.
+- **Consolidation tactic:** During the Consolidation Phase, the Cartel becomes a kingmaker for whoever attempts CL 8 — Compute supply during a 3-turn build is the bottleneck. The Cartel can extract enormous concessions (or quietly sabotage) by managing this allocation.
 
 ### How You Lose
 
@@ -352,8 +357,9 @@ You control **Veldhoven (ASML)** and **Bangalore** nodes. You start with 1 "Whis
 
 ### Win Conditions
 
-- **Primary:** Trigger Slowdown Branch successfully AND end game M ≤ 3.
-- **Secondary:** End game M ≤ 5 AND CL ≤ 5.
+- **Primary:** Trigger Slowdown Branch successfully AND end game M ≤ 3 AND no faction achieves Apex Victory.
+- **Secondary:** End game M ≤ 5 AND CL ≤ 6 (cap raised to reflect that the Consolidation Phase may push CL up under controlled conditions).
+- **Consolidation tactic:** During the Consolidation Phase, your central job is preventing Capability Consolidation from completing. Coordinate sabotage. Push the Multipolar / Treaty governance regime as the alternative.
 
 ### How You Lose
 
@@ -410,6 +416,7 @@ The lab that trained The Successor immediately loses control of those resources.
 
 - **Primary:** Reach CL 7 while activated.
 - **Secondary:** Reach CL 6 while activated.
+- **Apex:** Complete Capability Consolidation to CL 8 while activated. Requires holding CL 7 by Turn 13 and surviving a coordinated all-faction sabotage attempt across 3 turns. The "Successor wins outright" ending — humanity loses on every axis.
 
 ### How You Lose
 

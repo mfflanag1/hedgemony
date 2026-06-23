@@ -27,8 +27,11 @@ In playtesting, our targets for win frequency per faction (across many sessions)
 | Compute Cartel | 30-40% | Easiest single-faction win; survival mostly |
 | Coalition | 15-25% | Hardest path; requires Slowdown success |
 | Successor | 5-10% | Should activate occasionally; rarely win |
+| **Apex Victory (any faction)** | 10-15% | Should be achievable but require focused play across the Consolidation Phase |
 
-Multiple factions can win in the same game. Total win frequency may exceed 100%.
+Multiple factions can win in the same game (in non-Apex outcomes). Total win frequency may exceed 100%.
+
+When an Apex Victory occurs, only the apex faction wins; all others lose. So Apex frequency is *exclusive* and is counted separately.
 
 If your sessions consistently produce a single faction winning >50% of the time, balance has drifted. Tune via the levers below.
 
@@ -140,29 +143,36 @@ Tunes:
 
 ## Faction Power Curves
 
-How each faction's effective power changes over the 12-turn arc, in playtesting:
+How each faction's effective power changes over the 16-turn arc, in playtesting:
 
 ```
-OpenBrain:    [Strong → Strong → Crisis → Adapt → ?]
-              T1-3 strong; T4-6 crisis from Coalition pressure; T7-9 adapt or fold; T10-12 either victory or Successor loss
+OpenBrain:    [Strong → Strong → Crisis → Adapt → Apex Race]
+              T1-3 strong; T4-6 crisis from Coalition pressure; T7-9 adapt or fold; T10-12 reach CL 7;
+              T13-16 attempt Capability Consolidation OR consolidate position vs. competitor lab
 
-DeepCent:     [Weak → Catch up → Strong → ?]
-              T1-3 underdog; T4-6 closing via theft; T7-9 either parity or fall back; T10-12 either victory or capability irrelevance
+DeepCent:     [Weak → Catch up → Strong → Endgame Bet]
+              T1-3 underdog; T4-6 closing via theft; T7-9 either parity or fall back; T10-12 push for CL 7;
+              T13-16 either Apex attempt or settle for parity in Bipolar regime
 
-Hegemon:      [Reactive → Active → Decisive → Outcome-bearing]
-              T1-3 setting policy; T4-6 export controls and embeds; T7-9 DPA decision; T10-12 outcome of US-side lab
+Hegemon:      [Reactive → Active → Decisive → Apex via DPA?]
+              T1-3 setting policy; T4-6 export controls and embeds; T7-9 DPA decision; T10-12 OpenBrain status;
+              T13-16 if nationalized, attempt Apex; otherwise lobby for Bipolar Stability
 
-Politburo:    [Strategic → Strategic → Active → Outcome-bearing]
-              T1-3 consolidation; T4-6 espionage; T7-9 escalation decisions; T10-12 outcome of China-side lab
+Politburo:    [Strategic → Strategic → Active → Apex via consolidation?]
+              T1-3 consolidation; T4-6 espionage; T7-9 escalation; T10-12 DeepCent status;
+              T13-16 if at CL 7, attempt Apex; if not, prevent Hegemon Apex via Hsinchu leverage
 
-Cartel:       [Steady → Steady → Threatened → Survival]
-              T1-9 steady growth and revenue; T10-12 nationalization risk peaks; victory is survival
+Cartel:       [Steady → Steady → Threatened → Kingmaker]
+              T1-9 steady growth and revenue; T10-12 nationalization risk peaks;
+              T13-16 Compute supplier to Apex contender becomes the leverage of the era — extract or sabotage
 
-Coalition:    [Building → Building → Decisive → Outcome-bearing]
-              T1-5 building public trust and A; T6-8 Whistleblower window; T9 Slowdown vote; T10-12 outcome of vote determines win/lose
+Coalition:    [Building → Building → Decisive → Anti-Apex Coordinator]
+              T1-5 building public trust and A; T6-8 Whistleblower window; T9 Slowdown vote; T10-12 vote outcome;
+              T13-16 organize all-faction sabotage vs. Capability Consolidation; push Multipolar / Treaty regime
 
-Successor:    [Latent → Latent → Risk → ?]
-              T1-7 NPC; T8-9 risk threshold; T10-12 either activated and racing or absent
+Successor:    [Latent → Latent → Risk → Active → Apex Race]
+              T1-7 NPC; T8-9 risk threshold; T10-12 activation window;
+              T13-16 if active, attempt Apex while resisting all-faction coordination
 ```
 
 These are *typical*. Many sessions deviate.
@@ -208,6 +218,20 @@ Successor activates. White-Cell-controlled or player-controlled Successor choose
 
 **Typical outcome:** Coalition wins primary; Successor loses; humanity survives; everyone is shaken by what almost happened.
 
+### Pattern 7: Capability Consolidation Race (Consolidation Phase, 10-15% of sessions)
+
+Race phase produces a CL 7 leader by Turn 12. Leader (lab or nationalized lab) announces Capability Consolidation Turn 13. The Consolidation Phase becomes a 4-turn coordination crisis: can the other 5 factions spend the 5 K each to sabotage, every turn? Cartel's compute allocation becomes the swing. Coalition organizes; Successor (if active) is wild card.
+
+**Typical outcomes:**
+- Apex completes (40% of these sessions): Consolidating faction wins decisively. All others lose.
+- Apex fails (60%): falls back to Bipolar Stability or Multipolar / Treaty. Standard victory checks.
+
+### Pattern 8: Multipolar / Treaty Lock-In (Consolidation Phase, 10-15% of sessions)
+
+Slowdown triggered Turn 8-9 succeeded. International Compute Treaty (D02) signed Turn 9-11. Consolidation Phase becomes about durability — does the treaty survive the Consolidation Phase pressure? If yes (DeepCent doesn't defect, Hegemon doesn't attempt unilateral Apex): Multipolar / Treaty regime crystallizes; Coalition wins primary.
+
+**Typical outcome:** Coalition primary; OpenBrain + DeepCent both secondary at CL 6; Cartel survives; multiple winners; the most cooperative ending.
+
 ---
 
 ## Resource Economy Calibration
@@ -245,17 +269,22 @@ Default per-phase timing:
 | State of the Race | 2 min |
 | **Total per turn** | **~22 min** |
 
-12 turns × 22 min = 264 min = ~4.5 hours. Round to 5 hours including breaks. Add 60 min for after-action discussion.
+**Race Phase (12 turns × 22 min)** = 264 min = ~4.5 hours.
+**Consolidation Phase (4 turns × ~18 min)** = 72 min = ~1.2 hours (slightly faster: capability advancement narrows to 1-2 actors; State Action and Frontier Push shorten).
+**Full game (16 turns)** = ~5.7 hours play. Round to 6.5 hours with breaks. Add 60-90 min for after-action discussion.
 
-For a half-day session (~4 hours), facilitators may choose to:
+For a **half-day session (~4 hours)**, facilitators may choose to:
 - Skip Phases 1, 4 in early turns when not yet relevant
-- Use a 10-turn variant ending Q2 2028
+- Use the **12-turn Race-Phase-Only variant** ending Q4 2028 (skip Consolidation Phase; resolve standard victory conditions then)
 - Use 6-faction variant (skip Coalition or Cartel)
 
-For a two-day session, facilitators may add:
+For a **full-day session (~7 hours)**, run the complete 16-turn arc.
+
+For a **two-day session**, facilitators may add:
 - Pre-game faction strategy sessions (1 hour)
-- Mid-game break with private faction huddles (30 min)
+- Mid-game break with private faction huddles (30 min) at end of Race Phase
 - Extended after-action with structured comparison to AI 2027 narrative (90 min)
+- Optional Day 2 "post-Apex" or "post-Treaty" extension exploring 2030-2035 governance dynamics
 
 ---
 

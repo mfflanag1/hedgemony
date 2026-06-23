@@ -32,9 +32,10 @@ Scannable cheat sheet. If you have ten minutes before the session starts, read t
 
 | Track | Range | Meaning |
 |---|---|---|
-| **CL** | 0–7 | Highest Capability Level reached by any lab |
+| **CL** | 0–8 | Highest Capability Level (CL 8 only via Capability Consolidation) |
 | **M** | 0–10 | Misalignment Risk (probability frontier model has unaligned drives) |
 | **X** | 0–10 | International Tension (≥7 unlocks kinetic options) |
+| **ET** | 0–10 | Economic Transformation (active T8+; central in Consolidation Phase) |
 
 ---
 
@@ -50,6 +51,7 @@ Scannable cheat sheet. If you have ten minutes before the session starts, read t
 | 5 | Country of Geniuses | 10× R&D mult; **RSI activates** |
 | 6 | Superhuman Researcher | 50× R&D; "year per week"; **Successor may activate** |
 | 7 | Strategically Decisive | Uncatchable lead |
+| 8 | Singleton | One actor sets the terms; only via Capability Consolidation |
 
 ## CL Advancement Costs
 
@@ -62,8 +64,9 @@ Scannable cheat sheet. If you have ten minutes before the session starts, read t
 | CL 5 | 60 | 20 | 25 | RSI multiplier kicks in next |
 | CL 6 | 100 | (capped) | 40 | +1 free progress/turn from RSI |
 | CL 7 | 150 | — | 60 | Same |
+| CL 8 | 30 C + 20 K **per turn for 3 turns** | — | — | Capability Consolidation; sabotagable; see overview |
 
-**RSI Bonus:** From CL 5 onward, leading lab generates **+1 frontier progress per turn** automatically. CL 6 needs 5 progress; CL 7 needs 8.
+**RSI Bonus:** From CL 5 onward, leading lab generates **+1 frontier progress per turn** automatically. CL 6 needs 5 progress; CL 7 needs 8; CL 8 takes 12.
 
 ---
 
@@ -134,17 +137,19 @@ X rises with: weight theft (+1 attempted, +2 successful), export-control escalat
 
 ## Faction Victory Conditions
 
+**Apex Victory** — any faction completing Capability Consolidation (CL 8) wins decisively, all others lose. Otherwise:
+
 | Faction | Primary Win | Secondary / Survival |
 |---|---|---|
 | **OpenBrain** | CL = max AND M ≤ 5 AND not nationalized | CL ≥ 6 even if nationalized |
-| **DeepCent** | CL within 1 of leader OR successful weight theft at CL ≥ 4 | CL ≥ 4 by Q4 2028 |
+| **DeepCent** | CL within 1 of leader OR successful weight theft at CL ≥ 4 | CL ≥ 4 by Q4 2029 |
 | **Hegemon** | US-side lab leading AND M ≤ 5 AND X ≤ 6 | US-side lab leading regardless |
 | **Politburo** | China-side lab leading OR (parity AND X ≤ 6) | DeepCent ≥ CL 4 AND no kinetic loss |
-| **Cartel** | Un-nationalized in both jurisdictions AND ≥ 30 K | Un-nationalized in at least one |
-| **Coalition** | Slowdown Branch triggered AND end M ≤ 3 | End M ≤ 5 AND CL ≤ 5 |
-| **Successor** | Reach CL 7 while activated | Reach CL 6 while activated |
+| **Cartel** | Un-nationalized in both jurisdictions AND ≥ 40 K | Un-nationalized in at least one |
+| **Coalition** | Slowdown Branch triggered AND end M ≤ 3 AND no Apex | End M ≤ 5 AND CL ≤ 6 |
+| **Successor** | Reach CL 7 while activated; Apex if reaches CL 8 | Reach CL 6 while activated |
 
-**Multiple winners possible.** Successor winning means everyone else loses.
+**Multiple winners possible.** Successor or Apex winning means everyone else loses.
 
 ---
 
@@ -231,30 +236,41 @@ X rises with: weight theft (+1 attempted, +2 successful), export-control escalat
 
 ---
 
-## Default Timeline (12 turns)
+## Default Timeline (16 turns: 12 race + 4 consolidation)
 
-| Turn | Calendar | Default CL | Default X | Key event |
-|---|---|---|---|---|
-| 1 | Q1 2026 | 1 | 3 | I02 Stargate, I04 Trump AI Plan, I06 EU Phase 1 |
-| 2 | Q2 2026 | 2 | 3 | Agent-1 arrives |
-| 3 | Q3 2026 | 2 | 4 | China consolidates (F07 plays for Politburo) |
-| 4 | Q4 2026 | 2 | 4 | Mini-release wave; markets surge |
-| 5 | Q1 2027 | 3 | 5 | I06 EU GPAI rules; Agent-2 |
-| 6 | Q2 2027 | 3 | 6 | Weight theft window opens |
-| 7 | Q3 2027 | 4 | 6 | Agent-3, C02 Bioweapon Capability triggers |
-| 8 | Q4 2027 | 5 | 7 | C03 RSI Confirmed; X07 kinetic threats |
-| 9 | Q1 2028 | 5 | 7 | I06 EU full enforcement; Slowdown window opens |
-| 10 | Q2 2028 | 6 if race | 8 | Successor risk peaks |
-| 11 | Q3 2028 | 6 | 8 | Endgame moves |
-| 12 | Q4 2028 | 7 if race / 5 if slowdown | resolved | Final scoring |
+### Race Phase
+
+| Turn | Calendar | Default CL | Default X | ET | Key event |
+|---|---|---|---|---|---|
+| 1 | Q1 2026 | 1 | 3 | 0 | I02 Stargate, I04 Trump AI Plan, I06 EU Phase 1 |
+| 2 | Q2 2026 | 2 | 3 | 0 | Agent-1 arrives |
+| 3 | Q3 2026 | 2 | 4 | 0 | China consolidates (F07 plays for Politburo) |
+| 4 | Q4 2026 | 2 | 4 | 1 | Mini-release wave; markets surge |
+| 5 | Q1 2027 | 3 | 5 | 2 | I06 EU GPAI rules; Agent-2 |
+| 6 | Q2 2027 | 3 | 6 | 3 | Weight theft window opens |
+| 7 | Q3 2027 | 4 | 6 | 4 | Agent-3, C02 Bioweapon Capability triggers |
+| 8 | Q4 2027 | 5 | 7 | 5 | C03 RSI Confirmed; **ET tracking begins**; X07 kinetic threats |
+| 9 | Q1 2028 | 5 | 7 | 5 | I06 EU full enforcement; Slowdown window opens |
+| 10 | Q2 2028 | 6 if race | 8 | 6 | Successor risk peaks; I16 Mass Unemployment Crisis |
+| 11 | Q3 2028 | 6 | 8 | 6 | Endgame moves |
+| 12 | Q4 2028 | 7 if race / 5 if slowdown | branch resolved | 6 | Race phase ends |
+
+### Consolidation Phase (post-takeoff)
+
+| Turn | Calendar | Default CL | Default X | ET | Key event |
+|---|---|---|---|---|---|
+| 13 | Q1 2029 | 7 holds; CL 8 attempts begin | 8 race / 4 slowdown | 6 | I17 AI Rights Movement window |
+| 14 | Q2 2029 | Singleton attempt | 9 race / 4 slow | 7 | I18 Late-Game Pause Push; coordinated sabotage opportunities |
+| 15 | Q3 2029 | Final consolidation push | 9 race / 5 slow | 8 | I19 Geopolitical Realignment; treaty erosion or crystallization |
+| 16 | Q4 2029 | Apex resolved or fails | resolved | 9 | Governance Regime crystallizes; final scoring |
 
 ---
 
 ## Setup Checklist
 
 1. [ ] Print map with nodes
-2. [ ] Print **CL track** (0–7) prominently — this is the most-watched piece of state
-3. [ ] Print **M track** (0–10) and **X track** (0–10) next to CL
+2. [ ] Print **CL track** (0–8) prominently — this is the most-watched piece of state
+3. [ ] Print **M track** (0–10), **X track** (0–10), and **ET track** (0–10) next to CL
 4. [ ] Distribute faction sheets with starting resources
 5. [ ] Distribute starting hands: each lab 5 cards, governments 4 cards, Coalition 5, Cartel 4. Coalition holds Whistleblower (E10) face-down.
 6. [ ] Place starting Force Factors / Investments per Faction Guide
@@ -276,6 +292,9 @@ X rises with: weight theft (+1 attempted, +2 successful), export-control escalat
 | Politburo never attempts theft | They forgot or are saving for late | Brief them in Intelligence Briefing about timing |
 | Cartel hoarding K, no nationalization risk | Both states are weak | Inject D03 Antitrust + D08 Stock Crash |
 | Successor activates Turn 4 | Race extreme; M ≥ 7 by Turn 4 | Don't intervene; this is the race-ending narrative |
+| Consolidation Phase has no Apex contender | Race phase ended too cleanly at CL 6 | Inject C07 to encourage Consolidation; or accept that the ending will be Bipolar Stability |
+| Consolidation always completes uncoordinated | Coalition / non-leader factions not coordinating | Brief them on X06 mechanic at start of Turn 13; remind each turn |
+| ET stuck at 3-4 | Players never deployed AI agents | Inject I20 Productivity Boom or push CL pace via I12 |
 
 ---
 
@@ -283,9 +302,14 @@ X rises with: weight theft (+1 attempted, +2 successful), export-control escalat
 
 | Term | Definition |
 |---|---|
-| **CL** | Capability Level (0-7); the central state of the game |
+| **CL** | Capability Level (0-8); the central state of the game |
 | **M** | Misalignment Risk (0-10); probability of unaligned frontier model |
 | **X** | International Tension (0-10); ≥7 unlocks kinetic options |
+| **ET** | Economic Transformation (0-10); active T8+; central to Consolidation Phase |
+| **Apex Victory** | Achieved by completing Capability Consolidation (CL 8); all others lose |
+| **Capability Consolidation** | 3-turn build (30 C + 20 K/turn) post-CL 7; reaches CL 8; sabotagable |
+| **Consolidation Phase** | Turns 13-16; the post-takeoff endgame |
+| **Governance Regime** | The end-state political structure: Hegemonic / Bipolar / Multipolar / Singleton / Failed |
 | **K** | Capital (money) |
 | **A** | Alignment Reserve (safety credit) |
 | **P** | Public Trust (political capital) |

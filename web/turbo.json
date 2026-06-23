@@ -1,0 +1,27 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalPassThroughEnv": ["DATABASE_URL", "PORT", "ENABLE_CLASSIC", "NEXT_PUBLIC_ENABLE_CLASSIC", "NEXT_PUBLIC_ENGINE_WS_URL"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {},
+    "typecheck": {
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "dependsOn": ["^build"]
+    },
+    "parse": {
+      "outputs": ["dist/**"]
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

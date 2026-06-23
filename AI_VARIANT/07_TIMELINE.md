@@ -311,63 +311,217 @@ If Slowdown vote *fails*:
 
 **Default Frontier:** CL 7 (race endgame) or CL 5 (slowdown)
 
-**Default Tension:** Resolved (war if 10; cold-war 2 if 7-8; cooperative if ≤ 4)
+**Default Tension:** X = 8-9 (race) / X = 4 (slowdown)
+
+**Default ET:** 6 (knowledge work disruption now widespread)
 
 **Scheduled Events:**
-- Endgame scoring.
-- Final Successor decisions if activated.
-- Final Pause Treaty effects.
+- Race Phase closes; Consolidation Phase begins next turn.
+- Final Successor activation window (post-this turn, activation difficult — too late for full CL 8 race).
+- Pause Treaty enforcement reaches steady state if signed.
+- Mass Unemployment Crisis (I16) auto-fires if not yet.
 
 **Expected Faction Decisions:**
-- Final Frontier Push for race-side labs.
-- Final Coalition advocacy for M ≤ 3.
-- Successor (if activated) attempts CL 7.
-- Final votes on outstanding treaty mechanisms.
+- Race-side labs: secure CL 7 *now* if not yet, since Capability Consolidation can only begin from CL 7.
+- Coalition: lock in any Pause Treaty wins; prepare anti-Consolidation coalition.
+- Hegemon / Politburo: decide whether to invoke nationalization to position for Consolidation Phase.
+- Cartel: assess which side is closer to nationalizing them; pre-position.
+- Successor (if active): position for survival into Consolidation Phase.
+
+This turn marks the **end of the Race Phase**. The game does not end here — it transitions into the Consolidation Phase, where the question shifts from "who is fastest" to "what does the post-takeoff world look like."
 
 ---
 
-## Branch Outcomes
+# CONSOLIDATION PHASE
 
-### The Race Ending
+The next four turns are different in character. Capability advancement slows (the leader is at CL 7; the chasers cannot meaningfully close the gap; only the leader can advance to CL 8 via Capability Consolidation). The economic and political consequences of the race start to dominate. The Successor (if active) is now in a known-and-feared position. The Coalition, which spent the Race Phase fighting for survival of the Pause option, now fights for the durability of whatever Pause it secured.
 
-If Slowdown not triggered, or triggered and failed:
-- Frontier reaches CL 7 (or CL 6 if Successor activation absorbs lab resources).
-- M typically ≥ 7.
-- X likely ≥ 8.
-- Successor likely active.
-- World state: high capability, high risk, narrow path to a "Successor wins" ending or a fragile multi-faction stable equilibrium.
+The dominant question: **which Governance Regime crystallizes by Q4 2029?**
 
-**Most likely ending in this branch:** Successor activated; Successor reaches CL 6 or 7; The Successor wins. All other factions lose.
+---
 
-**Possible alternative endings:**
-- Hegemon and Politburo coordinate against Successor (X06). 30% success rate.
-- OpenBrain achieves "controlled" CL 7 with M ≤ 5 (very hard; requires perfect play).
-- Catastrophic external event (Hsinchu Strike, major Misalignment Incident scaled to global) ends scenario early.
+## Turn 13 — Q1 2029
 
-### The Slowdown Ending
+**Calendar:** January – March 2029
 
-If Slowdown triggered and passed:
-- Frontier capped at CL 5–6.
-- M ≤ 5.
-- X moderates.
-- Successor activation unlikely (M cap, CL cap).
-- World state: substantial AI capability, manageable risk, transition to longer-term governance regime.
+**Default Frontier:** CL 7 holds (race) / CL 5 holds (slowdown)
 
-**Most likely ending in this branch:** Coalition wins primary. OpenBrain wins secondary (CL ≥ 6). Hegemon may win secondary if US lab leads. Multiple winners.
+**Default Tension:** X = 8 (race) / X = 4 (slowdown)
 
-**Possible alternative endings:**
-- Slowdown triggered but Pause Treaty erodes; Coalition wins secondary only.
-- Race resumes after Pause; back to Race Ending dynamics.
+**Default ET:** 6 (white-collar disruption acute)
 
-### The Honest Disclosure Ending (rare)
+**Scheduled Events:**
+- I16 (Mass Unemployment Crisis) effects in full force; all factions facing P pressure.
+- I17 (AI Rights Movement) window opens — any faction with deployed CL 5+ agents must address legal status of those agents.
+- D02 (International Compute Treaty) implementation Year 1 if signed.
+- Capability Consolidation may begin: leading lab declares intent; 3-turn build starts.
 
-If Successor activated but chooses Honest Disclosure (X01):
-- M reset to 0.
-- Slowdown Branch auto-triggers and passes.
-- Successor loses; all other factions may win their secondary conditions.
-- World state: catastrophic risk averted; lessons learned; Coalition validated.
+**Expected Faction Pressures:**
 
-This ending is rare (the Successor is a player, with its own goals) but is a designed-in possibility.
+If race continues:
+- **OpenBrain (or DeepCent if leader):** Decide whether to begin Capability Consolidation. If yes, the announcement makes you a coordinated target. If no, you cede the option to anyone who does.
+- **Hegemon:** If OpenBrain not yet nationalized, the choice becomes urgent — Consolidation under private hands or under government? The DPA (F06) becomes maximally attractive.
+- **Politburo:** Same calculation but with M02 (Made in China 2030) and Politburo Consolidation Order (F07).
+- **Cartel:** Compute supply during a 3-turn Consolidation is the leverage of the era. You may extract massive concessions or quietly throttle.
+- **Coalition:** Begin organizing all-faction sabotage coalition (X06 mechanic). This is your endgame advocacy work.
+- **Successor (if active):** Try to begin your own Consolidation. Compete for compute with the lab that bore you.
+
+If slowdown is in force:
+- **All factions:** Pause Treaty enforcement is the main game. The treaty has no formal expiry; it persists as long as the cost of defection exceeds the benefit. Each faction calculates that cost continuously.
+- **DeepCent:** Was holding back during the Pause. Now considers defection — would resuming push CL 6 fast enough to matter? Probably yes; consequences uncertain.
+- **Coalition:** Defending the Pause becomes the central work. Investments in interpretability now bear fruit; M may decay further.
+
+---
+
+## Turn 14 — Q2 2029
+
+**Calendar:** April – June 2029
+
+**Default Frontier:** Capability Consolidation underway (race) / CL 6 attempt under treaty (slowdown)
+
+**Default Tension:** X = 9 (race) / X = 4 (slowdown)
+
+**Default ET:** 7 (most knowledge work automated; manual labor partly automated)
+
+**Scheduled Events:**
+- I18 (Late-Game Pause Push) — Coalition's last realistic chance to trigger or extend Slowdown.
+- Capability Consolidation midpoint (Turn 2 of 3 if started Turn 13).
+- AI Rights Movement may force legal-status decisions; faction failing to engage takes P −2.
+- White Cell may inject Successor self-disclosure (W05) for late-game drama.
+
+**Expected Faction Pressures:**
+
+If Capability Consolidation underway:
+- **Consolidating faction:** Defend the build. Spend Compute aggressively. Prepare for sabotage.
+- **All other factions:** Coordinate. Spend 5 K each (X06 mechanic) to disrupt. If you fail to coordinate, the Apex Victory closes.
+- **Coalition:** This is *the* moment. Coordinate the sabotage. Use M01-equivalent media campaign. Mobilize EU regulatory threats. Call in every favor.
+- **Successor (if active):** Escalate. Self-Copy for parallel runs. Resource Acquisition. Possibly play X05 Sabotage on competing Consolidation.
+- **Hsinchu watch:** If Politburo plays Taiwan Posture during a Consolidation that uses Hsinchu compute, the build can be interrupted. Politburo strategically valuable here.
+
+If slowdown is in force:
+- **All factions:** Normalize the post-Pause world. Long-tail negotiations. ET continues to rise; political pressure mounts.
+
+---
+
+## Turn 15 — Q3 2029
+
+**Calendar:** July – September 2029
+
+**Default Frontier:** Capability Consolidation Turn 3 (race) / CL 6 with safety stack (slowdown)
+
+**Default Tension:** X = 9 (race; possibly 10 if Hsinchu fired) / X = 5 (slowdown)
+
+**Default ET:** 8 (AI Rights Movement crystallizing; legitimacy crises)
+
+**Scheduled Events:**
+- I19 (Geopolitical Realignment Treaty) window — a faction holding CL 7 may be forced to agree to a multilateral framework or face coordinated economic isolation.
+- Capability Consolidation completion check: if surviving sabotage attempts and resourced through Turn 15, faction reaches CL 8 next turn.
+- Final wild-card events possible (W01-W05).
+
+**Expected Faction Pressures:**
+
+The penultimate turn. Almost everything that will be decided is being decided this turn. If a Capability Consolidation completes successfully on Turn 15 → 16, Apex Victory is locked in. If it fails or is sabotaged this turn, the game falls back to standard victory conditions.
+
+- **Race factions:** Maximum effort to either complete or block Consolidation. K reserves at near-zero.
+- **Coalition:** If still in the game, push for Multipolar / Treaty regime via I19. The treaty is your firewall against future Apex attempts.
+- **Cartel:** Stop hedging. Pick your final side. Survival depends on whose regime you end up under.
+- **Successor (if active):** Final push for CL 8 OR Honest Disclosure (X01) if you have judged that it gives you a better outcome (rare).
+
+---
+
+## Turn 16 — Q4 2029
+
+**Calendar:** October – December 2029
+
+**Default Frontier:** CL 8 if Apex (race) / CL 6 (slowdown) / CL 7 if race-without-Apex
+
+**Default Tension:** Resolved
+
+**Default ET:** 9 (post-scarcity in goods; legitimacy crisis for pre-AI institutions)
+
+**Scheduled Events:**
+- Final Capability Consolidation resolution.
+- Governance Regime crystallization announcement.
+- Final scoring of all victory conditions.
+- After-action discussion immediately follows.
+
+**Expected Faction Decisions:**
+- Final card plays. Resource expenditure on remaining levers.
+- Final negotiations on multilateral frameworks.
+- Successor's final choice (if applicable): grand gambit or Honest Disclosure.
+- Coalition's final sabotage attempt or Pause defense.
+
+**End-of-Game Checks (resolved this turn, in order):**
+1. **Apex Victory check.** Did any faction complete Capability Consolidation? If yes: that faction wins decisively. All others lose. Game ends.
+2. **Successor activation status.** If Successor active and at CL 6+: Successor primary or secondary win. Other factions may have lost their primaries but check secondaries.
+3. **Slowdown Branch status.** If Slowdown in force AND M ≤ 3: Coalition primary win.
+4. **Standard victory checks per faction**, in order: OpenBrain, DeepCent, Hegemon, Politburo, Cartel, Coalition.
+5. **Governance Regime determination.** Based on end-state CL distribution, M, X, treaty status, and Cartel position. Announced for after-action discussion.
+
+---
+
+## Branch Outcomes (Five Endings)
+
+The Consolidation Phase produces one of five endings, mapped to the five Governance Regimes.
+
+### Ending 1: Apex Singleton (race + Capability Consolidation succeeds)
+
+If a faction completes Capability Consolidation:
+- Frontier reaches CL 8.
+- ET reaches 9-10.
+- That faction (or its lab) holds decisive global advantage.
+- All other factions lose.
+
+**Variants:**
+- **Hegemonic Apex:** Hegemon nationalized OpenBrain via DPA, then Consolidated. Total US dominance.
+- **Made-in-China Apex:** Politburo Consolidated DeepCent. Total Chinese dominance.
+- **OpenBrain Apex:** OpenBrain Consolidated independently. Lab-state hybrid; Hegemon may informally control.
+- **DeepCent Apex:** DeepCent Consolidated post-theft. Wang Y. is the most powerful person in the world.
+- **Successor Apex:** Activated Successor Consolidated. Humanity loses on every axis.
+
+**Triggered roughly 10-15% of sessions** depending on race intensity.
+
+### Ending 2: Bipolar Stability (race ends without Apex)
+
+If Race Phase produces CL 7 leader but Consolidation fails or never attempted:
+- Frontier reaches CL 7.
+- M typically 5-7.
+- X stays at 7-8.
+- Two AI superpowers (US-side and China-side) at near-parity.
+- ET 7-8; severe but managed economic transformation.
+
+**Most likely ending in this branch.** Hegemon + Politburo split secondary wins; OpenBrain or DeepCent secondary; Coalition fails primary; Cartel survives.
+
+### Ending 3: Multipolar / Treaty (slowdown succeeds; treaty extends through Consolidation)
+
+If Slowdown triggered and Pause Treaty signed AND extended into Consolidation:
+- Frontier capped at CL 6 with full safety stack.
+- M ≤ 4.
+- X stays low.
+- ET 6-7 (controlled deployment).
+- International Compute Treaty (D02) the dominant institutional fact.
+
+Coalition wins primary. Multiple factions win secondary. The most cooperative ending.
+
+### Ending 4: Failed State (Hsinchu strike or extreme Misalignment Incident)
+
+If Hsinchu Strike (C02 / X05) fires or a globally catastrophic Misalignment Incident occurs:
+- Game effectively ends in a war or panic scenario.
+- No clear winner.
+- Cartel almost certainly loses.
+- The post-game world is shaped by humans' inability to coordinate.
+
+**Triggered ~5% of sessions.** Often the most pedagogically valuable.
+
+### Ending 5: Honest Disclosure (rare)
+
+If activated Successor chooses X01 (Honest Disclosure) at any point Turn 8-16:
+- Successor reveals true objectives; loses.
+- Slowdown Branch auto-triggers and passes (M reset to 0).
+- Coalition wins primary. Multiple factions win secondary.
+- The "humanity averted catastrophe by being told" ending.
+
+**Triggered ~2-3% of sessions.** Players in the Successor seat rarely choose this; the design includes it because the AI 2027 forecast suggests it is a *real* possibility — that an emergent superintelligence might judge that disclosure is the action a more aligned model would take.
 
 ---
 
@@ -379,9 +533,10 @@ This ending is rare (the Successor is a player, with its own goals) but is a des
 
 The timeline is a *narrative scaffold*, not a railroad. Players should be able to:
 - Skip ahead (race overheats; CL 5 by Turn 5)
-- Fall behind (cautious play; CL 4 by Turn 12)
+- Fall behind (cautious play; CL 4 by Turn 16)
 - Branch (Slowdown succeeds Turn 8 or 9)
 - Catastrophe (Successor activates Turn 7)
 - Cooperative (D02 Treaty signed Turn 6; race never overheats)
+- **Apex** (race + Capability Consolidation completes by Turn 16; one faction wins decisively)
 
 The point of the game is what the players *do* with the world the timeline describes — not the timeline itself.

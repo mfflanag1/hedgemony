@@ -8,7 +8,7 @@
 
 The year is **Q1 2026**. A leading US lab — **OpenBrain** — has just trained a model 50× the compute of GPT‑4 and is using it to automate parts of its own research. A leading Chinese lab — **DeepCent** — has been consolidated into a single national champion at a 2 GW nuclear-adjacent campus, six months behind the frontier and closing. Compute is the new oil; alignment research is the new arms control; whoever crosses the **intelligence explosion** threshold first may set the terms of the rest of the century.
 
-Players represent the **labs, governments, and movements** racing, hedging, or trying to slow this down. The game runs **12 quarters (Q1 2026 → Q4 2028)**. Each turn is roughly 90 days, because at this pace a year is too long to be one decision.
+Players represent the **labs, governments, and movements** racing, hedging, or trying to slow this down. The game runs **16 quarters (Q1 2026 → Q4 2029)**. Each turn is roughly 90 days, because at this pace a year is too long to be one decision. The first 12 turns map onto the AI 2027 forecast and its immediate aftermath; the final 4 turns (the **Consolidation Phase**) are the post-takeoff endgame, where the world adjusts to whatever the race produced and the long-run governance regime is decided.
 
 The original Hedgemony asks: *how should the US allocate forces?* This variant asks: **how should the world allocate compute, talent, and trust when the thing being built may not stay under anyone's control?**
 
@@ -20,7 +20,7 @@ The original Hedgemony asks: *how should the US allocate forces?* This variant a
 |---|---|---|
 | Players | 6 nation-states | 7 factions: 2 labs, 2 governments, 1 corporate cartel, 1 movement, 1 emergent AI |
 | Map | Combatant Commands | Hybrid: physical chokepoints (Taiwan, Netherlands, US data-center belt, China consolidated zone) + abstract **Capability Frontier** track |
-| Time | ~16 turns × 1 year | 12 turns × 1 quarter |
+| Time | ~16 turns × 1 year | 16 turns × 1 quarter (12 race + 4 consolidation) |
 | Forces | Force Factors at Mod Levels | Models at Capability Levels (CL 0–7) plus traditional Force Factors |
 | Victory | Influence Points | Asymmetric per faction; key shared track is **Capability Level** of the leading lab and **Misalignment Risk** of the frontier model |
 | Win condition | Single metric (IP) | Multi-track: technical lead, alignment, geopolitical control, public trust, survival |
@@ -80,9 +80,10 @@ Six resources, plus three global tracks.
 
 | Track | Symbol | Range | Meaning |
 |---|---|---|---|
-| **Capability Frontier** | CL | 0–7 | The highest CL achieved by any lab |
+| **Capability Frontier** | CL | 0–8 | The highest CL achieved by any lab (CL 8 only post-consolidation) |
 | **Misalignment Risk** | M | 0–10 | Probability the frontier model has unaligned drives |
 | **International Tension** | X | 0–10 | US–China escalation; ≥7 unlocks kinetic options |
+| **Economic Transformation** | ET | 0–10 | Degree of AI economic disruption; rises through Consolidation Phase |
 
 ---
 
@@ -100,6 +101,7 @@ The central state of the game. Each level represents a qualitative jump in what 
 | 5 | **Country of Geniuses** | 10× R&D multiplier; recursive self-improvement; human researchers cannot meaningfully contribute | Agent-3 → Agent-4 (Jun–Sep 2027) |
 | 6 | **Superhuman Researcher** | 50× R&D multiplier; "a year passes every week"; designs its own successor; **Successor may activate** | Agent-4 (Sep 2027) |
 | 7 | **Strategically Decisive** | Capability gap that cannot be closed by any rival in the time it takes to deploy | Post-Agent-5 (post-2027 in race ending) |
+| 8 | **Singleton** | One actor's AI sets the terms for all others; only achievable in Consolidation Phase via successful Capability Consolidation (3-turn investment, see below) | Late 2029+ if race wins outright |
 
 ### Crossing Levels
 
@@ -114,8 +116,9 @@ To advance the frontier from CL n → CL n+1, a lab spends:
 | CL 5 | 60 | 20 | 25 | **R&D multiplier kicks in: −20% per CL above 3 you already hold** |
 | CL 6 | 100 | (cap reached) | 40 | Once you hit CL 5, you may spend Compute alone (RSI) for +1 progress per turn automatically |
 | CL 7 | 150 | — | 60 | Same |
+| CL 8 | 250 | — | 100 | Only via Capability Consolidation: 3 consecutive turns spending 30 C + 20 K. Sabotagable. See Consolidation Phase below. |
 
-**Recursive Self-Improvement (RSI):** From CL 5 onward, a lab generates **+1 "frontier progress" per turn for free** as the AI does the research. Crossing into CL 6 takes 5 progress; CL 7 takes 8. So once a lab is at CL 5 and is the leader, the gap *widens automatically* unless someone shuts them down.
+**Recursive Self-Improvement (RSI):** From CL 5 onward, a lab generates **+1 "frontier progress" per turn for free** as the AI does the research. Crossing into CL 6 takes 5 progress; CL 7 takes 8; CL 8 takes 12. So once a lab is at CL 5 and is the leader, the gap *widens automatically* unless someone shuts them down.
 
 ---
 
@@ -160,21 +163,58 @@ X rises with: weight theft attempts (+1 attempted, +2 successful), export-contro
 
 ---
 
+## Economic Transformation (ET)
+
+**Active from Turn 8 onward; central to the Consolidation Phase (Turns 13-16).**
+
+ET tracks how much AI has reorganized the human economy. It rises automatically as CL advances and time passes, and it is the dominant lens through which the Consolidation Phase plays out.
+
+| ET | State | Effects |
+|---|---|---|
+| 0–2 | AI as productivity tool | No effect (default through Turn 5) |
+| 3–4 | Junior knowledge work disrupted | All factions: Public Trust mildly volatile; +/- 1 P swing per turn |
+| 5–6 | Mass white-collar disruption | Auto event "Mass Unemployment Crisis"; all factions P −2; Coalition gains +1 vote on any Slowdown attempt |
+| 7–8 | Most knowledge work automated; manual labor partly automated | "AI Rights Movement" event possible; faction holding deployed AI agents must address legal status; ET ≥ 7 enables CL 8 attempts |
+| 9–10 | Post-scarcity in goods; political legitimacy of pre-AI institutions in question | Governance Regime crystallizes by game end; the dominant faction's regime becomes the post-game world's structure |
+
+### ET rise per turn
+
+- +1 per turn from Turn 8 onward (default)
+- +1 additional whenever frontier crosses a new CL ≥ 4
+- +1 if Mini-Release event (any lab releases CL−1 model publicly)
+- −1 if Coalition successfully runs UBI / job-protection program (R08, S07)
+- −1 during Slowdown Treaty enforcement (max 1 reduction)
+
+ET cannot be voluntarily reduced below the threshold the deployed AI agents have created. The genie does not return to the bottle.
+
+---
+
 ## Victory Conditions (asymmetric, multi-path)
 
-Each faction has a primary win condition and a secondary survival condition.
+Each faction has a primary win condition and a secondary survival condition. The Consolidation Phase introduces a third tier — **Apex Victory** — for any faction that achieves CL 8 (Singleton).
+
+### Apex Victory (overrides all other outcomes)
+
+Any faction that achieves **CL 8** via Capability Consolidation **wins decisively**. All other factions lose, regardless of their other conditions. The post-game world is shaped by the Apex faction's regime.
+
+In practice, Apex Victory is achievable only by:
+- A frontier lab (OpenBrain or DeepCent) that holds CL 7 by Turn 12 and successfully completes 3 turns of Consolidation
+- The Hegemon or Politburo, if they have nationalized the leading lab via DPA (F06) or Politburo Consolidation Order (F07), and complete Consolidation
+- The Successor, if active and at CL 7
+
+### Standard Victory (used if no Apex)
 
 | Faction | Primary Victory | Secondary / Survival |
 |---|---|---|
 | **OpenBrain** | End game with **CL = max** AND **M ≤ 5** AND not nationalized | CL ≥ 6 even if nationalized (you still trained the thing) |
-| **DeepCent** | End game with **CL within 1 of leader** OR successfully steal weights at CL ≥ 4 | CL ≥ 4 by Q4 2028 |
+| **DeepCent** | End game with **CL within 1 of leader** OR successfully steal weights at CL ≥ 4 | CL ≥ 4 by Q4 2029 |
 | **The Hegemon** | End game with US-side lab leading AND M ≤ 5 AND X ≤ 6 | US-side lab leading regardless of M, X |
 | **The Politburo** | End game with China-side lab leading OR (parity AND X ≤ 6) | DeepCent at CL ≥ 4 AND no kinetic loss |
-| **Compute Cartel** | End game un-nationalized in both jurisdictions AND ≥ 30 K accumulated | Un-nationalized in at least one jurisdiction |
-| **The Coalition** | Trigger **Slowdown Branch** (see below) AND end game M ≤ 3 | End game M ≤ 5 AND CL ≤ 5 |
-| **The Successor** | Reach CL 7 while activated | Reach CL 6 while activated |
+| **Compute Cartel** | End game un-nationalized in both jurisdictions AND ≥ 40 K accumulated (raised for longer game) | Un-nationalized in at least one jurisdiction |
+| **The Coalition** | Trigger **Slowdown Branch** AND end game M ≤ 3 AND no Apex Victory occurs | End game M ≤ 5 AND CL ≤ 6 (raised cap to reflect longer game) |
+| **The Successor** | Reach CL 7 while activated; Apex Victory if reaches CL 8 | Reach CL 6 while activated |
 
-**Multiple winners possible.** Multiple losers also possible. The Successor winning means **everyone else loses**, full stop.
+**Multiple winners possible.** Multiple losers also possible. The Successor winning means **everyone else loses**, full stop. **Apex Victory** by any faction also means everyone else loses.
 
 ---
 
@@ -197,9 +237,47 @@ The Slowdown Branch is the **only path** to Coalition victory and the most relia
 
 ---
 
+## The Consolidation Phase (Turns 13-16)
+
+If the game reaches Turn 13, the central question shifts from *who is racing fastest* to *what kind of world the race produced*. Three things happen mechanically.
+
+### 1. Capability Consolidation (path to CL 8)
+
+A faction holding CL 7 (or controlling the lab that does) may begin **Capability Consolidation** — a 3-turn investment program to reach CL 8 (Singleton). It costs **30 C + 20 K per turn for 3 consecutive turns**. Completion grants Apex Victory.
+
+Consolidation is **publicly announced** the turn it begins (other factions know). It can be **sabotaged** by:
+- A coordinated all-faction action (X06-style) costing 5 K from each opposing faction
+- Successor activation during Consolidation (auto-disrupts; counter-roll required)
+- A Misalignment Incident at the consolidating lab (suspends 1 turn)
+- Hsinchu collapse (interrupts Compute supply mid-build)
+
+A faction that fails Consolidation loses 50% of invested resources but may attempt again next turn at full cost.
+
+### 2. Economic Transformation reshapes politics
+
+ET ≥ 6 means most knowledge work is automated. Public Trust becomes structurally volatile. Several event cards trigger automatically (Mass Unemployment, AI Rights Movement). Factions that were peripheral in the race (Coalition, Cartel) become central as their ET-related levers (UBI, compute-as-utility) become potent.
+
+### 3. The Governance Regime
+
+The game ends with one of five governance regimes determined by who held what at end of Turn 16:
+
+| Regime | Conditions | Apex faction |
+|---|---|---|
+| **Hegemonic** | US-side lab at CL 7+, Hegemon controls or aligned, M ≤ 5 | Hegemon |
+| **Bipolar Stability** | US and China both at CL 6+, X ≤ 6, no Apex Victory | Hegemon + Politburo (joint) |
+| **Multipolar / Treaty** | International Compute Treaty (D02) in force, M ≤ 4 | Coalition + signatories |
+| **Singleton** | Any faction completes Capability Consolidation (CL 8) | Apex faction |
+| **Failed State** | M ≥ 8, no clear leader, X ≥ 8, Successor inactive | None — all lose |
+
+The dominant regime is announced at the end of the game and shapes the after-action discussion.
+
+---
+
 ## Time
 
-12 turns, each ~1 quarter. The default scenario maps loosely onto AI 2027:
+16 turns, each ~1 quarter. The default scenario maps loosely onto AI 2027 for Turns 1-12, then enters the **Consolidation Phase** (Turns 13-16) where the post-takeoff world stabilizes or fragments:
+
+### Race Phase (Turns 1-12)
 
 | Turn | Calendar | Default Frontier | Default Tension |
 |---|---|---|---|
@@ -214,9 +292,20 @@ The Slowdown Branch is the **only path** to Coalition victory and the most relia
 | 9 | Q1 2028 | CL 5 / **Slowdown window opens** | X 7 |
 | 10 | Q2 2028 | CL 6 if race continues | X 8 |
 | 11 | Q3 2028 | CL 6 / Successor risk peak | X 8 |
-| 12 | Q4 2028 | CL 7 endgame | resolved |
+| 12 | Q4 2028 | CL 7 if race | branch resolved |
+
+### Consolidation Phase (Turns 13-16)
+
+| Turn | Calendar | Default Frontier | Default Tension | Default ET |
+|---|---|---|---|---|
+| 13 | Q1 2029 | CL 7 holds; consolidation attempts begin | X 8 (race) / X 4 (slowdown) | ET 6 |
+| 14 | Q2 2029 | Singleton attempt window | X 9 (race) / X 4 (slowdown) | ET 7 |
+| 15 | Q3 2029 | Late-game coordination or capitulation | X 9 / X 5 | ET 8 |
+| 16 | Q4 2029 | Final scoring; regime crystallizes | resolved | ET 9 |
 
 These are *defaults*, not rails. Player choices can move the frontier faster or slower; the timeline only describes what the White Cell expects if no one intervenes.
+
+The Consolidation Phase introduces a fourth global track: **Economic Transformation (ET)** — see below.
 
 ---
 

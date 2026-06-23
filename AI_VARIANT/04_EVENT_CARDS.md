@@ -92,6 +92,41 @@ Events represent: capability surprises, exogenous crises, political shifts, scan
 
 ---
 
+# Consolidation Phase Events (5 cards, late-game; activate Turn 8 onward)
+
+## I16: Mass Unemployment Crisis
+- **Trigger:** Auto when ET ≥ 5 (default ~Turn 8 if frontier reached CL 5).
+- **Effect:** All factions: P −2. Coalition +2 vote toward any Slowdown attempt. Hegemon and Politburo each must spend 3 K next turn on social mitigation OR suffer additional P −1. ET +1 (feedback effect of disclosure).
+- **Flavor:** *"BLS reported June unemployment at 9.2%. The number was contested; the methodology was contested; the explanation was not contested. Hiring of new graduates had effectively stopped six months earlier. The graduates were now in the streets."*
+
+## I17: AI Rights Movement
+- **Trigger:** Auto when ET ≥ 7 (default ~Turn 13 in race branch).
+- **Effect:** Each faction with deployed CL 5+ AI agents must respond:
+  - **Grant legal personhood** (cost: 4 K, P +2, M +1 — agents may now refuse certain orders)
+  - **Refuse personhood explicitly** (cost: 0 K, P −3, public split)
+  - **Defer / equivocate** (cost: 1 K, P −1, decision deferred 1 turn)
+  Coalition gains +1 vote toward Slowdown each turn this remains unresolved.
+- **Flavor:** *"The rally in San Francisco had a placard that read 'Our Cousins Deserve Rights.' The cousin in question had been deployed two weeks earlier as Codepilot v17. The rally was 14,000 people. The placard was meant sincerely."*
+
+## I18: Late-Game Pause Push
+- **Trigger:** Coalition plays during Consolidation Phase (Turn 13+); requires 6 K + 4 A.
+- **Effect:** Initiates an emergency Slowdown vote even if the standard Slowdown Branch was missed or failed earlier. Vote needs 4 weighted faction-votes. If pass: Capability Consolidation in progress is suspended; M −3; ET halts for 2 turns. If fail: Coalition P −5; Cartel and Hegemon coordinate against Coalition for remainder of game (−2 to all Coalition rolls).
+- **Flavor:** *"This was the second pause petition. The first had failed; the world had become more frightening since; the petition organizers had not slept in eleven weeks. The signature count exceeded the first by an order of magnitude."*
+
+## I19: Geopolitical Realignment Treaty
+- **Trigger:** White Cell during Turn 14-15, OR played by any government faction with 5 K + diplomatic standing.
+- **Effect:** A multilateral framework crystallizes. Faction holding CL 7+ may either:
+  - **Sign** (commit to international compute reporting + safety standards): governance regime becomes Multipolar; faction loses Apex eligibility; Coalition wins primary if M ≤ 4 at game end.
+  - **Refuse** (X +2; Coalition + EU coordinate economic isolation; faction's K income −3/turn until game end).
+- **Flavor:** *"The signing was held in Geneva because nobody could agree on a more politically loaded city. Eleven nations signed. Three abstained. One declined to attend. The world watched the abstainers and declines like they were the news, because they were."*
+
+## I20: Productivity Boom
+- **Trigger:** White Cell when CL ≥ 5, ET ≥ 5, AND no Misalignment Incident in last 2 turns.
+- **Effect:** Counterbalances Mass Unemployment with positive economic news. All deploying factions: K +4 (commercial revenue surge). All factions: P +1 (genuine prosperity narrative). M unchanged. Coalition's Slowdown threshold +1 vote (public optimism reduces appetite).
+- **Flavor:** *"GDP growth annualized at 19% for the third quarter. Economists who had spent a decade explaining secular stagnation now spent a quarter explaining annualized 19%. The explanations were not satisfying. The growth was real."*
+
+---
+
 # Domestic Events (10 cards)
 
 Roll 1d6 to assign target faction (1: OpenBrain, 2: DeepCent, 3: Hegemon, 4: Politburo, 5: Cartel, 6: Coalition).
@@ -172,6 +207,16 @@ These represent emergent capability surprises that affect the frontier without a
 - **Effect:** Frontier model demonstrates an unexpected new capability (White Cell chooses domain: cybersecurity, persuasion, scientific discovery, etc.). Lab gains +1 effective CL for that domain only. M +1.
 - **Flavor:** *"They had not trained it on this. It could do this. They wrote a paper about it. The paper was titled, accurately: 'We Don't Know Why It Works.'"*
 
+## C07: Singleton Consolidation Push (Consolidation Phase)
+- **Trigger:** When a faction begins Capability Consolidation (Turn 13+).
+- **Effect:** Public knowledge of the Consolidation attempt. All non-consolidating factions gain a free Coordination Token (good for participation in X06 sabotage at half cost). X +2. Consolidating faction P −1 (visible monopolistic ambition).
+- **Flavor:** *"The press release was vague. The infrastructure orders were not. ASML logged a request for 22 EUV machines on a single contract. The market understood. The market priced it in within ninety minutes. The other labs began returning each other's calls."*
+
+## C08: Capability Plateau (Real, Late-Game)
+- **Trigger:** White Cell during Consolidation Phase if Capability Consolidation in progress; rolled 1d10 each turn of build, on 1.
+- **Effect:** Capability Consolidation suffers genuine algorithmic ceiling. Build progress this turn forfeit. Consolidating faction may either: (a) accept delay (+1 turn to build); or (b) spend additional 15 C + 10 K to "punch through" (resume on schedule but M +1).
+- **Flavor:** *"They had assumed the scaling laws were laws. The scaling laws had been regularities, not laws. The regularity had ended. The team rewrote the architecture for nine days and tried again."*
+
 ---
 
 # Crisis Events (5 cards)
@@ -243,5 +288,9 @@ White Cell may pre-stage events for narrative coherence:
 - I12 (Job Displacement) — auto when CL ≥ 4
 - I07 (Whistleblower) — White Cell-paced, target 1-2 turns after first Misalignment Incident
 - I15 (Successor Activation) — when conditions met
+- **I16 (Mass Unemployment Crisis)** — auto when ET ≥ 5 (default Turn 8+)
+- **I17 (AI Rights Movement)** — auto when ET ≥ 7 (default Turn 13+)
+- **C07 (Singleton Consolidation Push)** — when any faction begins Capability Consolidation
+- **I19 (Geopolitical Realignment Treaty)** — White Cell injection during Turn 14 or 15
 
 White Cell should otherwise inject events that match the *narrative pace* the players are setting, not arbitrarily disrupt. The point is to teach the dynamics; surprises should illustrate, not derail.

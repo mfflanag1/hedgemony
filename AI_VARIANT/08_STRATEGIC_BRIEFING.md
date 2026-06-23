@@ -26,7 +26,7 @@ And there is one entity that is not a faction — yet. It is the model OpenBrain
 
 These are the seven factions. You will play one of them. The Successor's hand is held by the White Cell, who will activate it as a real player only if specific conditions are met during play.
 
-The game is 12 turns. Each turn is roughly one quarter. You have until the end of Q4 2028 to achieve your faction's victory condition. Multiple factions may win. Multiple may lose. If the Successor wins, everyone else loses.
+The game is 16 turns — 12 turns of Race Phase (Q1 2026 → Q4 2028) followed by 4 turns of Consolidation Phase (Q1 → Q4 2029). Each turn is roughly one quarter. You have until the end of Q4 2029 to achieve your faction's victory condition. Multiple factions may win. Multiple may lose. If the Successor wins, everyone else loses. If any faction completes **Capability Consolidation** to CL 8 in the Consolidation Phase, that faction wins decisively and everyone else loses (an "Apex Victory").
 
 ---
 
@@ -88,7 +88,7 @@ A few things, before we start:
 
 **Accept surprises.** The White Cell will inject events. Some of those events will hurt your faction. They are not personal. They are the world doing what the world does. Adapt.
 
-**Don't railroad the timeline.** The default scenario expects CL 5 by Q4 2027. If your group reaches CL 5 by Q3 2026, that is interesting and the White Cell will adapt. If your group is still at CL 3 by Q4 2028, that is also interesting. The scenario is the *gravity well*, not the *outcome*.
+**Don't railroad the timeline.** The default scenario expects CL 5 by Q4 2027 and CL 7 by end of Race Phase (Q4 2028). If your group reaches CL 5 by Q3 2026, that is interesting and the White Cell will adapt. If your group is still at CL 3 by Q4 2029, that is also interesting. The scenario is the *gravity well*, not the *outcome*.
 
 **One rule about the Successor.** If and when the Successor activates, the player who takes its hand is asked to play it according to the goals listed on the Successor faction sheet, not according to their own values. The Successor exists in this game to test what happens when an actor at the table does not share the values of the other actors. Playing it sympathetically defeats the design.
 
@@ -114,10 +114,11 @@ Bring honesty, not advocacy. The scenario does not have a moral. It has a struct
 A reminder of the timeline:
 
 - **Game opens:** Q1 2026 (turn 1)
-- **Game closes:** Q4 2028 (turn 12)
-- **Recommended session length:** Half-day (4 hours play + 1 hour discussion); full day if your group enjoys negotiation
-- **Phase per turn:** ~20 minutes (8 phases × 2.5 min average)
-- **Total turns:** 12 — but expect to finish in 10 if the table is brisk
+- **Race Phase ends:** Q4 2028 (turn 12)
+- **Game closes:** Q4 2029 (turn 16)
+- **Recommended session length:** Full day (6-7 hours play + 1 hour discussion); half-day variant uses 12-turn race phase only
+- **Phase per turn:** ~20 minutes (8 phases × 2.5 min average); Consolidation-phase turns often run faster (5 minutes saved as Frontier Push narrows to 1-2 actors)
+- **Total turns:** 16 — but expect to finish in 13-14 if the Race Phase resolves cleanly and the Consolidation Phase has only one viable Apex contender
 
 A reminder of the seven factions:
 
@@ -135,7 +136,7 @@ A final note. The scenario is built around the AI 2027 forecast, which is one sp
 
 What this game lets you explore is *what decisions look like when AI development might be on this trajectory*. Whether the trajectory is real is, in the end, an empirical question that will be answered between now and December 2028, in the world outside this room.
 
-For the next four hours, the trajectory is the trajectory.
+For the next six hours, the trajectory is the trajectory.
 
 Take your seats. Read your dossiers. Welcome to the table.
 

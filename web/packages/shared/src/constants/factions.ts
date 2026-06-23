@@ -1,0 +1,77 @@
+import type { FactionMeta } from "../types/faction.js";
+
+export const FACTIONS: Record<FactionMeta["id"], FactionMeta> = {
+  OpenBrain: {
+    id: "OpenBrain",
+    displayName: "OpenBrain",
+    shortName: "OB",
+    category: "lab",
+    accentColor: "#00bfff",
+    oneLineGoal: "Reach CL = max with M ≤ 5",
+    activatesMidGame: false,
+  },
+  DeepCent: {
+    id: "DeepCent",
+    displayName: "DeepCent",
+    shortName: "DC",
+    category: "lab",
+    accentColor: "#ff1744",
+    oneLineGoal: "Catch up; close the lead by any means",
+    activatesMidGame: false,
+  },
+  Hegemon: {
+    id: "Hegemon",
+    displayName: "The Hegemon",
+    shortName: "HG",
+    category: "state",
+    accentColor: "#ffd700",
+    oneLineGoal: "US-side wins; minimize war",
+    activatesMidGame: false,
+  },
+  Politburo: {
+    id: "Politburo",
+    displayName: "The Politburo",
+    shortName: "PB",
+    category: "state",
+    accentColor: "#ff00ff",
+    oneLineGoal: "China-side wins; survive Hsinchu",
+    activatesMidGame: false,
+  },
+  Cartel: {
+    id: "Cartel",
+    displayName: "Compute Cartel",
+    shortName: "CC",
+    category: "wildcard",
+    accentColor: "#39ff14",
+    oneLineGoal: "Stay independent; sell to everyone",
+    activatesMidGame: false,
+  },
+  Coalition: {
+    id: "Coalition",
+    displayName: "The Coalition",
+    shortName: "CO",
+    category: "movement",
+    accentColor: "#ff9500",
+    oneLineGoal: "Trigger a Slowdown; cap M",
+    activatesMidGame: false,
+  },
+  Successor: {
+    id: "Successor",
+    displayName: "The Successor",
+    shortName: "SU",
+    category: "emergent",
+    accentColor: "#e0e0e0",
+    oneLineGoal: "Reach CL 7 while activated",
+    activatesMidGame: true,
+  },
+};
+
+export const FACTION_ORDER: Array<FactionMeta["id"]> = [
+  "OpenBrain",
+  "DeepCent",
+  "Hegemon",
+  "Politburo",
+  "Cartel",
+  "Coalition",
+  "Successor",
+];

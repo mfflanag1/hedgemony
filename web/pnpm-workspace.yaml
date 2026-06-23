@@ -1,0 +1,8 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+# Don't include generated artifacts in workspace scan
+ignoredBuiltDependencies:
+  - esbuild
+
