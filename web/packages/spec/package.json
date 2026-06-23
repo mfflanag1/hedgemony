@@ -7,7 +7,7 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
-    "./catalog": "./dist/cards.generated.json"
+    "./catalog": "./src/generated/cards.generated.json"
   },
   "scripts": {
     "parse": "tsx src/parser/run.ts",

@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 
 // Absolute path to the spec source markdown directory
 const SPEC_DIR = resolve(__dirname, "../../../../../AI_VARIANT");
-const OUT_DIR = resolve(__dirname, "../../dist");
+const OUT_DIR = resolve(__dirname, "../generated");
 
 async function main() {
   console.log(`Parsing cards from: ${SPEC_DIR}`);

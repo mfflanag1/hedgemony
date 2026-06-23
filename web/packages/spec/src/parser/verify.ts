@@ -14,7 +14,7 @@ import type { Card, CardCatalog } from "@hedgemony/shared";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const CATALOG_PATH = resolve(__dirname, "../../dist/cards.generated.json");
+const CATALOG_PATH = resolve(__dirname, "../generated/cards.generated.json");
 
 async function main() {
   const raw = await readFile(CATALOG_PATH, "utf8");
